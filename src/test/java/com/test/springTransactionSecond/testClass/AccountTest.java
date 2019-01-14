@@ -1,20 +1,18 @@
-package com.test.springTransactionFirst.testClass;
+package com.test.springTransactionSecond.testClass;
 
-import com.test.springTransactionFirst.service.AccountService;
-
+import com.test.springTransationSecond.service.AccountService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-
 import javax.annotation.Resource;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:applicationFirst.xml")
+@ContextConfiguration("classpath:applicationSecond.xml")
 public class AccountTest {
 
-    @Resource(name = "accountService")
+    @Resource(name = "accountServiceProxy")
     private AccountService accountService;
 
 
